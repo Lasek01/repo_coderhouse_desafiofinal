@@ -1,0 +1,235 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+:root{
+    --bs-danger-rgb: 112,0,0;  
+}
+
+
+// -------------IMPORTS---------------
+@import "productos";
+@import "botones";
+@import "contacto";
+
+
+// -------------VARIABLES-------------
+$color-primario: rgb(112,0,0);
+$color-secundario: rgb(235, 235, 235);
+@mixin textos($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+
+// -------------HEADER----------------
+.navbar-nav{
+    padding-right: 2rem;
+}
+
+.navbar-brand{
+    text-shadow: 2px 2px 5px rgb(0, 0, 0) !important;
+    :hover{
+        text-shadow: 0px 0px 10px rgb(214, 214, 214) !important;
+    }
+}
+
+
+// -------------SOBRE NOSOTROS--------
+.sobre-nosotros{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    h1{
+        @include textos($color-secundario, 2.5rem, 700);
+        text-shadow: 2px 2px 5px black;
+    }
+    p{
+        @include textos($color-secundario, 1rem, 400);
+    }
+    .img-fluid{
+        box-shadow: 5px 5px 5px rgb(55, 0, 0);
+    }
+}
+
+
+//--------------UBICACION-------------
+.ubicacion{
+    text-align: center;
+    h2{
+        @include textos($color-primario, 2.5rem, 700);
+        padding-bottom: 1rem;
+        text-shadow: 2px 2px 5px grey;
+    }
+    p{
+        @include textos($color-primario, 1rem, 500);
+    }
+    .mapa-chico{
+        padding-bottom: 5rem;
+    }
+}
+
+
+//--------------FOOTER----------------
+footer{
+    padding: 1rem;
+    background-image: linear-gradient(rgb(112, 0, 0), rgb(50, 0, 0));
+
+}
+.footer__newsletter{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    fieldset{
+        padding: 0,5rem;
+        padding-bottom: 1rem;
+        border: 2px solid white;
+        border-radius: 0.4rem;
+        text-align: center;
+    }
+    legend{
+        @include textos($color-secundario, 1rem, 400);
+        padding-top: 0.5rem;
+    }
+    .mailbox{
+        color: white;
+        border: 2px solid;
+        border-color: white;
+        border-radius: 0.4rem;
+        padding:0.2rem;
+        background: transparent;
+        width: 8rem;
+        font-size: 0.6rem;
+    }
+    .boton{
+        width: 4rem;
+        font-size: 0.6rem;
+    }
+}
+
+
+
+.div__logo{
+    text-align: left;
+    .footer__logo{
+    @include textos($color-secundario, 1.5rem, 400);
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0) !important;
+        :hover{
+        color: $color-secundario;
+        text-shadow: 0px 0px 10px white !important;
+        }
+    }
+}
+
+
+.div__redes{
+    text-align: right;
+    .link-redes{
+    @include textos($color-secundario, 1.5rem, 700);
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0) !important;
+    transition: all 0.2s ease-out;
+        :hover{
+        color: $color-secundario;
+        text-shadow: 0px 0px 10px white;
+        }
+    }
+}
+
+
+
+// -------------RESPONSIVE------------
+@media screen and(min-width: 992px){
+    .map-container{
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+    .mapa-chico{
+        display: none;
+    }
+}
+
+@media screen and(max-width: 991px){
+    .map-container{
+        padding-bottom: 5rem;
+    }
+    .map-container{
+        display: none;
+    }
+}
+
+@media screen and(max-width: 775px){
+    h1{
+        font-size: 2.3rem !important;
+    }
+}
+
+@media screen and(max-width: 365px){
+    h1{
+        font-size: 1.9rem !important;
+    }
+    h2{
+        font-size: 1.9rem !important;
+    }
+    p{
+        font-size: 0.7rem !important;
+    }
+    .sobrenos__texto{
+        padding-bottom: 1rem !important;
+    }
+    .ubi__texto{
+        padding: 1rem !important;
+    }
+}
+
+@media screen and(min-width: 768px){
+    .marca{
+        font-size: 2rem;
+    }
+    .link--grande{
+        font-size: 1.2rem;
+    }
+
+    .footer__newsletter{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        legend{
+            @include textos($color-secundario, 2rem, 400);
+        }
+        .mailbox{
+            color: white;
+            border: 2px solid;
+            border-color: white;
+            border-radius: 0.4rem;
+            padding:0.2rem;
+            background: transparent;
+            width: 20rem;
+            font-size: 1.3rem;
+        }
+        .boton{
+            width: 10rem;
+            font-size: 1.3rem;
+        }
+    }
+    .footer__logo{
+        font-size: 2.5rem !important;
+        padding: 1rem;
+    }
+    .link-redes{
+        font-size: 3rem !important;
+        padding: 1rem;
+    }
+
+    .card{
+        width: 15rem !important;
+    }
+}

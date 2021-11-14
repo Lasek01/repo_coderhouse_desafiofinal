@@ -1,0 +1,373 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+:root {
+  --bs-danger-rgb: 112,0,0;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  margin-left: 1rem;
+}
+
+main .card {
+  margin: 1rem;
+}
+
+main h5 {
+  color: #ebebeb;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main p {
+  color: #ebebeb;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+.boton {
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 0.4rem;
+  padding: 2px 8px;
+  width: 8rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.boton:hover {
+  color: #700000;
+  font-weight: 600;
+  background: white;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
+.formulario-contacto fieldset {
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border: 2px solid #700000;
+  border-radius: 0.4rem;
+}
+
+.formulario-contacto legend {
+  color: #700000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+.formulario-contacto label {
+  width: 8rem;
+  color: #700000;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.formulario-contacto input {
+  color: #700000;
+  border: 2px solid;
+  border-color: #700000;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background: transparent;
+  width: 8rem;
+  margin: 0.2rem;
+  font-size: 0.6rem;
+}
+
+.formulario-contacto .escriba-aqui {
+  width: 11rem;
+}
+
+.formulario-contacto .text-area {
+  width: 17rem;
+}
+
+.formulario-contacto .boton {
+  width: 6rem;
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 10rem;
+  }
+  .formulario-contacto legend {
+    color: #700000;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .formulario-contacto label {
+    width: 21rem;
+    color: #700000;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .formulario-contacto input {
+    margin: 0.4rem;
+    width: 23rem;
+    font-size: 1.6rem;
+  }
+  .formulario-contacto .escriba-aqui {
+    width: 22rem;
+  }
+  .formulario-contacto .text-area {
+    height: 10rem;
+    width: 44.5rem;
+  }
+  .formulario-contacto .boton {
+    width: 21.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.navbar-nav {
+  padding-right: 2rem;
+}
+
+.navbar-brand {
+  text-shadow: 2px 2px 5px black !important;
+}
+
+.navbar-brand :hover {
+  text-shadow: 0px 0px 10px #d6d6d6 !important;
+}
+
+.sobre-nosotros {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.sobre-nosotros h1 {
+  color: #ebebeb;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px black;
+}
+
+.sobre-nosotros p {
+  color: #ebebeb;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sobre-nosotros .img-fluid {
+  -webkit-box-shadow: 5px 5px 5px #370000;
+          box-shadow: 5px 5px 5px #370000;
+}
+
+.ubicacion {
+  text-align: center;
+}
+
+.ubicacion h2 {
+  color: #700000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  text-shadow: 2px 2px 5px grey;
+}
+
+.ubicacion p {
+  color: #700000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ubicacion .mapa-chico {
+  padding-bottom: 5rem;
+}
+
+footer {
+  padding: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#700000), to(#320000));
+  background-image: linear-gradient(#700000, #320000);
+}
+
+.footer__newsletter {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer__newsletter fieldset {
+  padding: 0,5rem;
+  padding-bottom: 1rem;
+  border: 2px solid white;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.footer__newsletter legend {
+  color: #ebebeb;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+}
+
+.footer__newsletter .mailbox {
+  color: white;
+  border: 2px solid;
+  border-color: white;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background: transparent;
+  width: 8rem;
+  font-size: 0.6rem;
+}
+
+.footer__newsletter .boton {
+  width: 4rem;
+  font-size: 0.6rem;
+}
+
+.div__logo {
+  text-align: left;
+}
+
+.div__logo .footer__logo {
+  color: #ebebeb;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-shadow: 2px 2px 5px black !important;
+}
+
+.div__logo .footer__logo :hover {
+  color: #ebebeb;
+  text-shadow: 0px 0px 10px white !important;
+}
+
+.div__redes {
+  text-align: right;
+}
+
+.div__redes .link-redes {
+  color: #ebebeb;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px black !important;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.div__redes .link-redes :hover {
+  color: #ebebeb;
+  text-shadow: 0px 0px 10px white;
+}
+
+@media screen and (min-width: 992px) {
+  .map-container {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .mapa-chico {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .map-container {
+    padding-bottom: 5rem;
+  }
+  .map-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  h1 {
+    font-size: 2.3rem !important;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  h1 {
+    font-size: 1.9rem !important;
+  }
+  h2 {
+    font-size: 1.9rem !important;
+  }
+  p {
+    font-size: 0.7rem !important;
+  }
+  .sobrenos__texto {
+    padding-bottom: 1rem !important;
+  }
+  .ubi__texto {
+    padding: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marca {
+    font-size: 2rem;
+  }
+  .link--grande {
+    font-size: 1.2rem;
+  }
+  .footer__newsletter {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .footer__newsletter legend {
+    color: #ebebeb;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .footer__newsletter .mailbox {
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+    background: transparent;
+    width: 20rem;
+    font-size: 1.3rem;
+  }
+  .footer__newsletter .boton {
+    width: 10rem;
+    font-size: 1.3rem;
+  }
+  .footer__logo {
+    font-size: 2.5rem !important;
+    padding: 1rem;
+  }
+  .link-redes {
+    font-size: 3rem !important;
+    padding: 1rem;
+  }
+  .card {
+    width: 15rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

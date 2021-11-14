@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+$color-primario: rgb(112,0,0);
+$color-secundario: rgb(235, 235, 235);
+@mixin textos($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+main{
+    margin-left: 1rem;
+    .card{
+        margin: 1rem;
+    }
+    h5{
+        @include textos($color-secundario, 1rem, 500);
+    }
+    p{
+        @include textos($color-secundario, 0.5rem, 400);
+    }
+}
