@@ -3,6 +3,7 @@
     margin: 0px;
 }
 
+
 $color-primario: rgb(112,0,0);
 $color-secundario: rgb(235, 235, 235);
 @mixin textos($color, $size, $weight) {
@@ -11,31 +12,35 @@ $color-secundario: rgb(235, 235, 235);
     font-weight: $weight;
 }
 
-main{
-    padding-top: 13rem;
-    padding-bottom: 13rem;
+.main-contacto{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    min-height: 87vh;
 }
 
 .formulario-contacto{
+    max-width: 32.3rem;
+    margin: auto;
     fieldset{
+        background-color: $color-primario;
         padding: 0.5rem;
         padding-bottom: 1rem;
-        border: 2px solid $color-primario;
-        border-radius: 0.4rem;
+        border: 2px solid black;
+        border-radius: 0.6rem;
 
     }
     legend{
-        @include textos($color-primario, 1.5rem, 600);
+        @include textos($color-secundario, 1.5rem, 600);
         padding-top: 0.5rem;
     }
     label{
         width: 8rem;
-        @include textos($color-primario, 0.9rem, 400);
+        @include textos($color-secundario, 0.9rem, 400);
     }
     input{
         color: $color-primario;
         border: 2px solid;
-        border-color: $color-primario;
+        border-color: $color-secundario;
         border-radius: 0.4rem;
         padding:0.2rem;
         background: transparent;
@@ -52,8 +57,16 @@ main{
     .boton{
         width: 6rem;
         font-size: 0.6rem;
+        color: $color-secundario;
     }
 }
+
+.boton:hover{
+    color: $color-primario;
+}
+
+
+// -------------RESPONSIVE------------
 
 @media screen and(min-width: 768px){
     main{
@@ -61,28 +74,35 @@ main{
     }
     .formulario-contacto{
         legend{
-            @include textos($color-primario, 3rem, 600);
+            @include textos($color-secundario, 2.5rem, 600);
         }
         label{
-            width: 21rem;
-            @include textos($color-primario, 1.7rem, 600);
+            width: 15rem;
+            @include textos($color-secundario, 1.2rem, 500);
         }
         input{
             margin: 0.4rem;
-            width: 23rem;
-            font-size: 1.6rem;
+            width: 15rem;
+            font-size: 1.2rem;
         }
         .escriba-aqui{
-            width: 22rem;
+            width: 15rem;
         }
         .text-area{
-            height: 10rem;
-            width: 44.5rem;
+            height: 5rem;
+            width: 31rem;
         }
         .boton{
-            width: 21.5rem;
-            font-size: 2rem;
-            font-weight: 600;
+            width: 14.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-secundario;
         }
+    }
+}
+
+@media screen and(max-width: 767px){
+    .formulario-contacto{
+        max-width: 18.3rem;
     }
 }

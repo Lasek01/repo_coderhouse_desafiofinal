@@ -13,6 +13,10 @@ $color-secundario: rgb(235, 235, 235);
 
 main{
     margin-left: 1rem;
+    .main-div{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     .card{
         margin: 1rem;
     }
@@ -20,6 +24,14 @@ main{
         @include textos($color-secundario, 1rem, 500);
     }
     p{
-        @include textos($color-secundario, 0.5rem, 400);
+        @include textos($color-secundario, 0.66rem, 400);
     }
 }
+
+// -------------RESPONSIVE------------
+@media screen and(max-width: 1127px){
+    .card{
+        width: 17rem !important;
+    }
+}
+

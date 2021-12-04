@@ -13,6 +13,10 @@ a:-webkit-any-link {
   --bs-danger-rgb: 112,0,0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -20,6 +24,11 @@ a:-webkit-any-link {
 
 main {
   margin-left: 1rem;
+}
+
+main .main-div {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 main .card {
@@ -34,8 +43,14 @@ main h5 {
 
 main p {
   color: #ebebeb;
-  font-size: 0.5rem;
+  font-size: 0.66rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1127px) {
+  .card {
+    width: 17rem !important;
+  }
 }
 
 .boton {
@@ -47,8 +62,8 @@ main p {
   width: 8rem;
   margin-left: 0.5rem;
   cursor: pointer;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .boton:hover {
@@ -62,20 +77,27 @@ main p {
   margin: 0px;
 }
 
-main {
-  padding-top: 13rem;
-  padding-bottom: 13rem;
+.main-contacto {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 87vh;
+}
+
+.formulario-contacto {
+  max-width: 32.3rem;
+  margin: auto;
 }
 
 .formulario-contacto fieldset {
+  background-color: #700000;
   padding: 0.5rem;
   padding-bottom: 1rem;
-  border: 2px solid #700000;
-  border-radius: 0.4rem;
+  border: 2px solid black;
+  border-radius: 0.6rem;
 }
 
 .formulario-contacto legend {
-  color: #700000;
+  color: #ebebeb;
   font-size: 1.5rem;
   font-weight: 600;
   padding-top: 0.5rem;
@@ -83,7 +105,7 @@ main {
 
 .formulario-contacto label {
   width: 8rem;
-  color: #700000;
+  color: #ebebeb;
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -91,7 +113,7 @@ main {
 .formulario-contacto input {
   color: #700000;
   border: 2px solid;
-  border-color: #700000;
+  border-color: #ebebeb;
   border-radius: 0.4rem;
   padding: 0.2rem;
   background: transparent;
@@ -111,6 +133,11 @@ main {
 .formulario-contacto .boton {
   width: 6rem;
   font-size: 0.6rem;
+  color: #ebebeb;
+}
+
+.boton:hover {
+  color: #700000;
 }
 
 @media screen and (min-width: 768px) {
@@ -118,32 +145,39 @@ main {
     padding: 10rem;
   }
   .formulario-contacto legend {
-    color: #700000;
-    font-size: 3rem;
+    color: #ebebeb;
+    font-size: 2.5rem;
     font-weight: 600;
   }
   .formulario-contacto label {
-    width: 21rem;
-    color: #700000;
-    font-size: 1.7rem;
-    font-weight: 600;
+    width: 15rem;
+    color: #ebebeb;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
   .formulario-contacto input {
     margin: 0.4rem;
-    width: 23rem;
-    font-size: 1.6rem;
+    width: 15rem;
+    font-size: 1.2rem;
   }
   .formulario-contacto .escriba-aqui {
-    width: 22rem;
+    width: 15rem;
   }
   .formulario-contacto .text-area {
-    height: 10rem;
-    width: 44.5rem;
+    height: 5rem;
+    width: 31rem;
   }
   .formulario-contacto .boton {
-    width: 21.5rem;
-    font-size: 2rem;
-    font-weight: 600;
+    width: 14.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ebebeb;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .formulario-contacto {
+    max-width: 18.3rem;
   }
 }
 
@@ -272,9 +306,10 @@ footer {
 
 .div__redes .link-redes {
   color: #ebebeb;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
+  padding-left: 0.6rem;
   text-shadow: 2px 2px 5px black !important;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -365,9 +400,6 @@ footer {
   .link-redes {
     font-size: 3rem !important;
     padding: 1rem;
-  }
-  .card {
-    width: 15rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

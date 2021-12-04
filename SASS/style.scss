@@ -13,6 +13,9 @@ a:-webkit-any-link {
     --bs-danger-rgb: 112,0,0;  
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 // -------------IMPORTS---------------
 @import "productos";
@@ -134,8 +137,9 @@ footer{
 .div__redes{
     text-align: right;
     .link-redes{
-    @include textos($color-secundario, 1.5rem, 700);
+    @include textos($color-secundario, 2rem, 700);
     text-decoration: none;
+    padding-left: 0.6rem;
     text-shadow: 2px 2px 5px rgb(0, 0, 0) !important;
     transition: all 0.2s ease-out;
         :hover{
@@ -227,9 +231,5 @@ footer{
     .link-redes{
         font-size: 3rem !important;
         padding: 1rem;
-    }
-
-    .card{
-        width: 15rem !important;
     }
 }
